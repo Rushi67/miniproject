@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "sender@email_address.com",
+        Password: "Enter your password",
+        To: 'receiver@email_address.com',
+        From: "sender@email_address.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
+  <title>Log in</title>
+</head>
+
+<body>
+  <nav class="px-28   text-yellow-50 flex justify-between">
+    <div class="w-full h-screen bg-no-repeat bg-top"
+      style="background-image: url('https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+
+      <ul class="px-28 py-8 flex space-x-10 justify-end gap-x-96">
+        <li class="  cursor-pointer">Name.com</li>
+        <div class="mx-2 w-full h-fit">
+          <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3 hover:text-blue-900 hover:bg-white"><a
+              href="index.html" class="nav-link">Home</a></button>
+          <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white "><a
+              href="about.html" class="nav-link">About</a></button>
+          <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white "><a
+              href="tour.html" class="nav-link">Tour</a></button>
+          <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white "><a
+              href="hotels.html" class="nav-link">Hotels</a></button>
+          <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white "><a
+              href="login.html" class="nav-link">Log in</a></button>
+          <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white"><a
+              href="contact.html" class="nav-link">Contact</a></button>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <div class="container text-black">
+    <h1>Contact Us</h1> <br>
+
+    <form action="https://formsubmit.co/el/romezi" method="POST">
+      <div class="form-group">
+        <input type="text" id="Name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email_address" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="Subject" class="form-control" placeholder="Subject" required>
+      </div>
+      <div class="form-group">
+        <textarea name="text" id="message" cols="30" rows="7" class="form-control" placeholder="Message"
+          required></textarea>
+      </div>
+      <div class="form-group">
+        <input type="reset" value="Reset" ondrop="clearInterval()" class="btn btn-primary py-3 px-5">
+        <div class="form-group">
+          <input type="submit" value="Send Email" onclick="sendEmail()" class="btn btn-primary py-3 px-5">
+        </div>
+    </form>
+  </div>
+</body>
+
+</html>
