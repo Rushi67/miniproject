@@ -7,76 +7,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Log in</title>
-  <link rel="shortcut icon" href="https://mir-s3-cdn-cf.behance.net/projects/404/d262d9153687157.Y3JvcCwzMDY4LDI0MDAsMTEzLDA.png">
+  <link rel="shortcut icon"
+    href="https://mir-s3-cdn-cf.behance.net/projects/404/d262d9153687157.Y3JvcCwzMDY4LDI0MDAsMTEzLDA.png">
 </head>
 
 <body>
-  <nav class="px-28   text-yellow-50 flex justify-between">
-    <div class="w-full h-screen bg-no-repeat bg-top"
-      style="background-image: url('https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+  <nav class="px-28  bg-blue-900 text-yellow-50 flex justify-between">
 
-      <ul class="px-28 py-8 flex space-x-10 justify-end gap-x-96">
-        <li class="  cursor-pointer">Terrific_travels.com</li>
-        <div class="mx-2 w-full h-fit">
-          <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3 hover:text-blue-900 hover:bg-white"><a
-              href="index.html" class="nav-link">Home</a></button>
-          <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white "><a
-              href="about.html" class="nav-link">About</a></button>
-          <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white "><a
-              href="tour.html" class="nav-link">Tour</a></button>
-          <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white "><a
-              href="hotels.html" class="nav-link">Hotels</a></button>
-          <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white "><a
-              href="login.html" class="nav-link">Log in</a></button>
-          <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white"><a
-              href="contact.html" class="nav-link">Contact</a></button>
-  
-        </div>
-      </ul>
-      
-    </div>
+    <ul class="px-28 py-8 flex space-x-10 justify-end gap-x-96">
+      <li class="  cursor-pointer">Terrific_travels.com</li>
+      <div class="mx-2 w-full h-fit">
+        <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3 hover:text-blue-900 hover:bg-white"><a
+            href="index.html" class="nav-link">Home</a></button>
+        <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white "><a
+            href="about.html" class="nav-link">About</a></button>
+        <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white "><a
+            href="tour.html" class="nav-link">Tour</a></button>
+        <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white "><a
+            href="hotels.html" class="nav-link">Hotels</a></button>
+        <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white "><a
+            href="login.html" class="nav-link">Log in</a></button>
+        <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3  hover:text-blue-900 hover:bg-white"><a
+            href="contact.html" class="nav-link">Contact</a></button>
+
+      </div>
+    </ul>
   </nav>
-  
-  <section class="bg-gray-50 ">
-    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+  <div class="w-full h-screen bg-no-repeat bg-top"
+    style="background-image: url('https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+
+    <section class="bg-gray-50 ">
+      <div class="flex flex-col items-center justify-center px-6 py-52 mx-auto h-96 ">
         <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900">
-            <img class="w-8 h-8 mr-2" src="https://mir-s3-cdn-cf.behance.net/projects/404/d262d9153687157.Y3JvcCwzMDY4LDI0MDAsMTEzLDA.png" alt="logo">
-            Terrific Travels    
+          <img class="w-8 h-8 mr-2"
+            src="https://mir-s3-cdn-cf.behance.net/projects/404/d262d9153687157.Y3JvcCwzMDY4LDI0MDAsMTEzLDA.png"
+            alt="logo">
+          Terrific Travels
         </a>
-        <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
-            <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-                <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
-                    Sign in to your account
-                </h1>
-                <form class="space-y-4 md:space-y-6" action="#">
-                    <div>
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
-                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="name@company.com" required="">
-                    </div>
-                    <div>
-                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
-                        <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required="">
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-start">
-                            <div class="flex items-center h-5">
-                              <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300" required="">
-                            </div>
-                            <div class="ml-3 text-sm">
-                              <label for="remember" class="text-gray-500">Remember me</label>
-                            </div>
-                        </div>
-                        <a href="#" class="text-sm font-medium text-blue-600 hover:underline">Forgot password?</a>
-                    </div>
-                    <button type="submit" class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Sign in</button>
-                    <p class="text-sm font-light text-gray-500">
-                        Don’t have an account yet? <a href="#" class="font-medium text-blue-600 hover:underline">Sign Up</a>
-                    </p>
-                </form>
-            </div>
+        <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md ">
+          <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+            <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
+              Sign in to your account
+            </h1>
+            <form class="space-y-4 md:space-y-6" action="#">
+              <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                <input type="email" name="email" id="email"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                  placeholder="name@company.com" required="">
+              </div>
+              <div>
+                <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
+                <input type="password" name="password" id="password" placeholder="••••••••"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                  required="">
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-start">
+                  <div class="flex items-center h-5">
+                    <input id="remember" aria-describedby="remember" type="checkbox"
+                      class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300"
+                      required="">
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="remember" class="text-gray-500">Remember me</label>
+                  </div>
+                </div>
+                <a href="#" class="text-sm font-medium text-blue-600 hover:underline">Forgot password?</a>
+              </div>
+              <button type="submit"
+                class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Sign
+                in</button>
+              <p class="text-sm font-light text-gray-500">
+                Don’t have an account yet? <a href="#" class="font-medium text-blue-600 hover:underline">Sign Up</a>
+              </p>
+            </form>
+          </div>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
+  </div>
+
+
 </body>
 
 </html>
