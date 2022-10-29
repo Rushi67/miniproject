@@ -11,15 +11,11 @@
     function sendEmail() {
       Email.send({
         Host: "smtp.gmail.com",
-        Username: "sender@email_address.com",
-        Password: "Enter your password",
-        To: 'receiver@email_address.com',
-        From: "sender@email_address.com",
-        Subject: "Sending Email using javascript",
         Body: "Well that was easy!!",
+
       })
         .then(function (Subject) {
-          alert("mail sent successfully")
+          alert("You subscribed successfully")
         });
     }
   </script>
@@ -30,8 +26,8 @@
 <body>
   <nav class="px-28   bg-blue-900 text-yellow-50 flex justify-between">
    
-      <ul class="px-28 py-8 flex space-x-10 justify-end gap-x-96">
-        <li class="  cursor-pointer">Terrific_travels.com</li>
+      <ul class="px-26 py-8 flex space-x-10 justify-end gap-x-96">
+        <li class="text-xl font-bold  cursor-pointer">Terrific_travels.com</li>
         <div class="mx-2 w-full h-fit">
           <button class="bg-blue-900 text-yellow-50 rounded-2xl px-3 hover:text-blue-900 hover:bg-white"><a
               href="index.html" class="nav-link">Home</a></button>
@@ -49,34 +45,60 @@
       </ul>
 
   </nav>
-  <div class="w-full h-screen bg-no-repeat bg-top"
-  style="background-image: url('https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
-
-  <div class="container text-black">
-    <h1>Contact Us</h1> <br>
-
+  <div class="relative h-screen w-full ">
+    <div class="container px-16 py-5 text-black">
+      <p class="text-6xl font-serif ">Contact Us</p> <br><br>
+       <p class="text-2xl font-semibold">
+        Terrific Travels Contact Number:- 
+       </p><br>
+       <p class="text-xl font-mono">
+          +91 98765 43210
+       </p><br><br>
+       <p class="text-2xl font-semibold">
+        Terrific Travels Address:- 
+       </p><br>
+       <p class="text-xl font-mono">
+        Shop No.7, Rukmini Niwas, 60 D.V Pradhan Marg, Dadar Tram Terminus, <br>
+        Rd Number 1,Hindu Colony, Dadar East, Mumbai, Maharashtra 400014
+       </p>
+    </div>
+    <div class="absolute top-10 right-96 h-16 w-24 ">
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.004512376461!2d72.84610392918101!3d19.018926299195034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ced94cca135f%3A0x9d04514c635d19b1!2sRukmini%20Niwas!5e0!3m2!1sen!2sin!4v1667017069463!5m2!1sen!2sin" width="400" height="400" style="border: 10px; width: 10; color: #000;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+ 
+      <div class="absolute inset-x-16 bottom-6 h-80">
+       
     <form action="https://formspree.io/f/xgeqzgvo" method="POST">
+     
+      <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+        <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
+          For the latest deals and tips, travel no further 
+          than your inbox
+        </h1>
+        <form class="space-y-4 md:space-y-6" action="#">
+          <div>
+            <label for="email" class="block mb-2 font-medium text-gray-900">Your email</label>
+            <input type="email" name="email" id="email"
+              class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-black-600  "
+              placeholder="name@company.com" required="">
+          </div>
       <div class="form-group">
-        <input type="text" id="Name" class="form-control" placeholder="Your Name" required>
-      </div>
-      <div class="form-group">
-        <input type="email" id="email_address" class="form-control" placeholder="Your Email" required>
-      </div>
-      <div class="form-group">
-        <input type="text" id="Subject" class="form-control" placeholder="Subject" required>
-      </div>
-      <div class="form-group">
-        <textarea name="text" id="message" cols="30" rows="7" class="form-control" placeholder="Message"
-          required></textarea>
-      </div>
-      <div class="form-group">
-        <input type="reset" value="Reset" ondrop="clearInterval()" class="btn btn-primary py-3 px-5">
-        <div class="form-group">
-          <input type="submit" value="Send Email" onclick="sendEmail()" class="btn btn-primary py-3 px-5">
+        <input type="reset" value="Reset" ondrop="clearInterval()" class="btn btn-primary py-3 px-5 border border-black rounded bg-gray-400">
+      
+          <input type="submit" value="Subscribe" onclick="sendEmail()" class="btn btn-primary py-3 px-5 border border-black rounded bg-green-400">
         </div>
     </form>
-  </div>
-  </div>
+      </div>
+    </form>
+      </div>
+    
+  
+  
+  
+    </div>
+  
+  
 </body>
 
 </html>
